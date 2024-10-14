@@ -1,0 +1,14 @@
+.blurry-bg-badge{
+    color: #fff;
+    display: flex;
+    width: max-content;
+    padding: 50px;
+    justify-content: center;
+    line-height: 1;
+    font-size: 90px;
+    font-weight: bold;
+    border-radius: 100px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: linear-gradient(94deg, rgba(49, 50, 52, .61) 46.62%, rgba(88, 77, 77, .61) 115.88%);
+}
