@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from "../assets/images/logo.png"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -22,22 +23,26 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg' : 'bg-transparent'
+            className={`fixed top-0 w-full z-50  transition-all duration-500 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg' : 'bg-transparent'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
-                    <div className="flex-shrink-0">
-                        {/* Logo */}
-                        <a href="#">
+            <div className="w-[100%] lg:px-24 flex justify-between">
+                <div className="flex justify-between w-full h-[80px]">
+                    <div className="cursor-pointer" onClick={() => {
+                            window.scrollTo({
+                                behavior: 'smooth',
+                                top: 0
+                            })
+                        }}>
+                     
                             <img
-                                src="/path-to-your-logo.png"
+                                src={logo}
                                 alt="Logo"
-                                className="h-8 w-auto"
+                                className="h-24 w-auto"
                             />
-                        </a>
+                   
                     </div>
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center space-x-16">
                         {/* Menu items */}
                         <a href="#home" className="text-white hover:text-lime-400">
                             Home

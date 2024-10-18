@@ -1,51 +1,74 @@
 import React from 'react';
+import logo from "../assets/images/logo.png"
+import { FaPhoneAlt } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
+import Colors from '../contants/colors';
+
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 md:flex md:justify-between">
+    <footer className=" text-white ">
+      <div className="w-full bg-black px-24 h-[300px] items-center flex justify-between ">
         {/* Left Section */}
-        <div className="flex items-center space-x-2">
-          <div className="text-lime-400 text-3xl">✳</div>
-          <h2 className="text-2xl font-bold">Noxfolio</h2>
+        <div className="flex flex-col ">
+          <img src={logo} className='w-20 object-cover' alt="" />
+          <p>I Design Experiences, Not Just Interfaces.</p>
         </div>
 
         {/* Center Section - Menu */}
-        <nav className="my-4 md:my-0 md:flex md:space-x-6">
-          <a href="#" className="text-gray-300 hover:text-lime-400">Service</a>
-          <a href="#" className="text-gray-300 hover:text-lime-400">Projects</a>
-          <a href="#" className="text-gray-300 hover:text-lime-400">Pricing</a>
-          <a href="#" className="text-gray-300 hover:text-lime-400">Faqs</a>
-          <a href="#" className="text-gray-300 hover:text-lime-400">News</a>
-          <a href="#" className="text-gray-300 hover:text-lime-400">Contact</a>
-        </nav>
+
+        
+        <div className="quick-links ">
+          <div className="title text-xl">Quick Links</div>
+          <div className="flex flex-col mt-10">
+            <nav className="md:flex md:space-x-6">
+              <a href="#" className="text-gray-300 hover:text-lime-400">Service</a>
+              <a href="#" className="text-gray-300 hover:text-lime-400">Projects</a>
+              <a href="#" className="text-gray-300 hover:text-lime-400">Pricing</a>
+              <a href="#" className="text-gray-300 hover:text-lime-400">Faqs</a>
+              <a href="#" className="text-gray-300 hover:text-lime-400">News</a>
+              <a href="#" className="text-gray-300 hover:text-lime-400">Contact</a>
+            </nav>
+          </div>
+        </div>
+        {/*  */}
+        <div className="address">
+          <div className="title text-xl">Address</div>
+          <div className='flex flex-col gap-3 mt-5'>
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><FaLocationDot color={Colors.primaryColor} />
+              </span> Multan, Pakistan
+            </p>
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><MdEmail color={Colors.primaryColor} />
+              </span> ahmadfiaz9089@gmail.com
+            </p>
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><FaPhoneAlt color={Colors.primaryColor} />
+              </span> +92 306 6495894
+            </p>
+          </div>
+
+        </div>
       </div>
+
 
       {/* Terms Section */}
-      <div className="max-w-7xl mx-auto px-4 text-center mt-6 text-gray-400">
-        <p>
-          These Terms will be applied fully and affect to your use of this Website. By using
-          this Website, you agreed to accept all terms and conditions written in here.
-        </p>
-      </div>
 
       {/* Social Media & Copyright Section */}
-      <div className="max-w-7xl mx-auto px-4 mt-6 flex flex-col md:flex-row items-center justify-between text-gray-400">
-        {/* Social Media */}
-        <div className="flex space-x-4 items-center">
-          <span>Follow:</span>
-          <a href="#" className="text-xl hover:text-lime-400">🐦</a>
-          <a href="#" className="text-xl hover:text-lime-400">📘</a>
-          <a href="#" className="text-xl hover:text-lime-400">📸</a>
-          <a href="#" className="text-xl hover:text-lime-400">📌</a>
-        </div>
+      <div className="w-full py-5 text-center  bg-[#131313] px-24 flex justify-between text-gray-400">
 
-        {/* Copyright */}
-        <div className="mt-4 md:mt-0 text-gray-500">
-          <p>
-            Copyright &copy;2024, <span className="text-lime-400">Noxfolio</span> All Rights Reserved
+ 
+          <p >
+            Copyright &copy;2024, Made by <span className="text-lime-400">Ahmad</span>
           </p>
-        </div>
+          <div className="social space-x-14">
+            <a href="">Linkdin</a>
+            <a href="">Whatsapp</a>
+            <a href="">Facebook</a>
+          </div>
+
       </div>
     </footer>
   );

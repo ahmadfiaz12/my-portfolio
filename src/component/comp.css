@@ -1,0 +1,39 @@
+/* Create smooth infinite scrolling animation */
+@keyframes marquee {
+    from {
+      transform: translateX(0); /* Start at the initial position */
+    }
+    to {
+      transform: translateX(-100%); /* Move halfway to ensure smooth looping */
+    }
+  }
+  
+  .marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+  }
+  
+  .marquee-content {
+    display: inline-flex; /* Keep content in a single line */
+    animation: marquee 70s linear infinite;
+  }
+  
+  /* Duplicate the content to achieve infinite effect */
+  .marquee-content > * {
+    flex: 0 0 auto; /* Prevent content from wrapping */
+  }
+  
+  .marquee-content::after {
+    content: attr(data-duplicate); /* This displays the same content twice */
+    display: inline-block;
+    width: 100%; /* Matches the width of the content for seamless transition */
+  }
+  
+  /* Optional: Define additional styles for the text outline */
+  .textOutline {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
+  

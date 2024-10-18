@@ -1,11 +1,12 @@
-import React from 'react'
+
 import "./home.css"
 import Colors from '../contants/colors'
+import smilingImage from "../assets/images/IT-Business-Benefits-Image.webp"
 
 const HeroSection = () => {
   return (
     <>
-      <div className="flex h-[100%] text-white px-24">
+      <div className="flex h-[100%] text-white p-24">
         <div className="flex flex-col gap-10 w-full">
           <div className="short-title font-bold text-sm relative -bottom-28">FRONT END DEVELOPER</div>
           <div className="flex items-end gap-20">
@@ -21,7 +22,7 @@ const HeroSection = () => {
         </div>
 
       </div>
-      <section className="bg-black text-white min-h-screen flex items-center justify-center">
+      <section className="bg-black text-white min-h-screen flex items-center justify-center px-10">
         <div className="container mx-auto p-10">
           {/* Top Section */}
           <div className="mb-10">
@@ -39,29 +40,13 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* Info Section */}
-          <div className="flex space-x-10 mt-8">
-            <div>
-              <p className="text-lime-500">BORN IN</p>
-              <h4 className="text-xl font-semibold">NEW YORK</h4>
-            </div>
-            <div>
-              <p className="text-lime-500">EXPERIENCE</p>
-              <h4 className="text-xl font-semibold">20+ YEARS</h4>
-            </div>
-            <div>
-              <p className="text-lime-500">DATE OF BIRTH</p>
-              <h4 className="text-xl font-semibold">27 JUNE 1983</h4>
-            </div>
-          </div>
-
         </div>
         {/* Statistics Section */}
         <div className="flex justify-between items-center mt-16">
           {/* Left circle */}
           <div className="relative text-center">
             <div className="w-32 h-32 rounded-full border border-gray-600 flex flex-col items-center justify-center text-white">
-              <h3 className="text-2xl font-bold">8K</h3>
+              <h3 className="text-2xl font-bold">10+</h3>
               <p className="text-gray-400">Project Completed</p>
             </div>
           </div>
@@ -76,7 +61,7 @@ const HeroSection = () => {
           {/* Right Circle */}
           <div className="relative text-center">
             <div className="w-32 h-32 rounded-full border border-gray-600 flex flex-col items-center justify-center text-white">
-              <h3 className="text-2xl font-bold">80K</h3>
+              <h3 className="text-2xl font-bold">5+</h3>
               <p className="text-gray-400">Satisfied Customers</p>
             </div>
           </div>
@@ -85,15 +70,11 @@ const HeroSection = () => {
       <section className="bg-black text-white py-12 px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Images Section */}
         <div className="relative flex flex-col lg:flex-row items-center lg:items-start lg:justify-start space-y-6 lg:space-y-0 lg:space-x-6">
+     
           <img
-            src="/path-to-your-image1.jpg"
-            alt="Person Working"
-            className="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-lg shadow-lg"
-          />
-          <img
-            src="/path-to-your-image2.jpg"
+            src={smilingImage}
             alt="Person Smiling"
-            className="absolute top-16 left-20 w-48 h-48 lg:w-60 lg:h-60 object-cover rounded-lg shadow-lg"
+            className="w-48 h-48 lg:h-[500px] lg:w-full object-cover rounded-lg shadow-lg"
           />
           <div className="absolute top-0 left-0 w-12 h-12 bg-lime-500 transform -translate-x-6 -translate-y-6"></div>
           <div className="absolute bottom-0 left-0 w-12 h-12 bg-lime-500 transform translate-x-6 translate-y-6"></div>

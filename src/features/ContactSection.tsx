@@ -1,40 +1,54 @@
 import React from 'react';
+import { FaPhoneAlt,  FaWhatsapp, FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
+import Colors from '../contants/colors';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="text-white p-10 py-24">
+      <div className="flex px-10 gap-14">
         {/* Left Section - Contact Info */}
-        <div className="space-y-6">
-          <h2 className="text-4xl font-bold">Let's Talk For your <span className="text-lime-400">Next Projects</span></h2>
-          <p className="text-gray-400">
-            Sed ut perspiciatis unde omnis natus totam rem aperiam eaque inventore veritatis
+        <div className="space-y-6 w-[35%]">
+          <p className="text-gray-400 font-semibold">
+            Get in Touch
           </p>
-          <div>
-            <h3 className="text-xl font-semibold">Main Office</h3>
-            <p className="flex items-center text-gray-300">
-              <span className="mr-2">📍</span> 55 Main Street, 2nd block, New York City
+          <h2 className="text-5xl font-normal">Let's Talk For your <span className="text-lime-400">Next Projects</span></h2>
+          <p className="text-gray-400">
+  Ready to bring your ideas to life? Let's create something remarkable together. Reach out, and let's turn your vision into reality.
+</p>
+          <div className='space-y-3'>
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><FaLocationDot color={Colors.primaryColor} />
+              </span> Multan, Pakistan
             </p>
-            <p className="flex items-center text-gray-300">
-              <span className="mr-2">✉️</span> support@gmail.com
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><MdEmail color={Colors.primaryColor} />
+              </span> ahmadfiaz9089@gmail.com
             </p>
-            <p className="flex items-center text-gray-300">
-              <span className="mr-2">📞</span> +880 (123) 456 88
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+              <span className="mr-2"><FaPhoneAlt color={Colors.primaryColor} />
+              </span> +92 306 6495894
             </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Follow Me</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-2xl">🌐</a>
-              <a href="#" className="text-2xl">🌐</a>
-              <a href="#" className="text-2xl">🌐</a>
-              <a href="#" className="text-2xl">🌐</a>
+            <div className="flex space-x-4 mt-3">
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaLinkedinIn />
+
+              </a>
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaFacebookF />
+
+              </a>
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaWhatsapp />
+
+              </a>
             </div>
           </div>
         </div>
 
         {/* Right Section - Contact Form */}
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <div className="bg-[#1F1F1F] flex-1 p-8 rounded-lg shadow-lg">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
@@ -43,7 +57,7 @@ const ContactSection: React.FC = () => {
                   type="text"
                   id="fullName"
                   placeholder="Richard D. Hammond"
-                  className="w-full bg-gray-900 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-lime-400"
+                  className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
               <div>
@@ -52,7 +66,7 @@ const ContactSection: React.FC = () => {
                   type="email"
                   id="email"
                   placeholder="support@gmail.com"
-                  className="w-full bg-gray-900 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-lime-400"
+                  className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
             </div>
@@ -63,7 +77,7 @@ const ContactSection: React.FC = () => {
                   type="text"
                   id="phoneNumber"
                   placeholder="+880 (123) 456 88"
-                  className="w-full bg-gray-900 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-lime-400"
+                  className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
               <div>
@@ -72,7 +86,7 @@ const ContactSection: React.FC = () => {
                   type="text"
                   id="subject"
                   placeholder="Subject"
-                  className="w-full bg-gray-900 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-lime-400"
+                  className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
             </div>
@@ -82,12 +96,11 @@ const ContactSection: React.FC = () => {
                 id="message"
                 placeholder="Write message"
                 rows={4}
-                className="w-full bg-gray-900 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-lime-400"
-              ></textarea>
+                className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"              ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-lime-400 text-black font-semibold py-3 rounded-lg shadow-md hover:bg-lime-500 transition-colors"
+              className="w-[max-content] px-10 bg-lime-400 text-black font-semibold py-3 rounded-lg shadow-md hover:bg-lime-500 transition-colors"
             >
               Send Us Message
             </button>
