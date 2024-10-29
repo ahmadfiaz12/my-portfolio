@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import logo from "../assets/images/logo.png"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+
+    
 
     // Listen to scroll event and update navbar state
     useEffect(() => {

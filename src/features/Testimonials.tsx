@@ -71,25 +71,25 @@ const testimonials = [
 const Testimonials: React.FC = () => {
   return (
     <div className="bg-black text-white py-28 lg:px-24">
-      <div className="w-full flex">
+      <div className="w-full flex gap-10">
         <div className="mb-8 w-[40%]">
-          <p className="text-sm text-gray-400 uppercase">Clients Testimonials</p>
+          <p className="text-sm text-gray-400 uppercase" data-aos="fade-up" data-aos-duration="1000">Clients Testimonials</p>
           <h2 className="text-5xl font-semibold">
             I've <span className="" style={{
               color: Colors.primaryColor
             }}>10+ Clients</span> Feedback
           </h2>
-          <p className="text-gray-500 mt-4 max-w-md">
+          <p className="text-gray-500 mt-4 max-w-md" data-aos="fade-up" data-aos-duration="1000">
             Sed ut perspiciatis unde omnis natus totam rem aperiam eaque inventore veritatis.
           </p>
           <div className="flex space-x-3 mt-6">
-            <button
+            <button data-aos="fade-up" data-aos-duration="1000"
               id="prevButton"
               className="bg-gray-800 p-3 rounded-full hover:bg-[#c9f31d] transition hover:text-black"
             >
               <BsArrowLeft  />
             </button>
-            <button
+            <button data-aos="fade-up" data-aos-duration="1000"
               id="nextButton"
               className="bg-[#c9f31d] p-3 rounded-full hover:bg-[#c9f31d] transition"
             >
@@ -128,7 +128,7 @@ const Testimonials: React.FC = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-transparent border-2 border-gray-600 h-[350px] p-6 rounded-xl text-center shadow-lg transform transition duration-300">
+              <div className="bg-transparent border-2 border-gray-600 h-[100%] max-h-[300px] p-6 rounded-xl text-center shadow-lg transform transition duration-300" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex justify-center items-center mb-4">
                   <FaQuoteLeft className="text-[#c9f31d] 400 text-4xl" />
                 </div>

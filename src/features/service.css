@@ -10,13 +10,23 @@
     color: white;
     animation: marquee-move-text var(--speed, 15s) linear infinite var(--direction,
             forwards);
+            overflow: hidden;
 }
 
-.marquee-text p {
+.marquee-text-track  div {
     border: 1px solid white;
     background-color: #141414;
     border-radius: 999px;
+    text-align: center;
+    display: flex;
+    align-items: center;
     padding: 1rem 2.5rem;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.marquee-text-track div img{
+    height: 40px;
 }
 
 @keyframes marquee-move-text {
