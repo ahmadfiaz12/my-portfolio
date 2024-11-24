@@ -29,7 +29,7 @@ const services: Service[] = [
 const ServicesSection: React.FC = () => {
   return (
     <>
-      <section className="bg-black text-white py-12 px-6 lg:p-24">
+      <section id='services' className="bg-black text-white py-12 px-6 lg:p-24">
         <div className="text-center mb-12">
           <h3 className="text-xl font-light text-gray-400">Popular Services</h3>
           <h2 className="text-4xl font-semibold text-white mt-2">

@@ -1,27 +1,43 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import Lenis from '@studio-freight/lenis';
 
-export const useLenis = () => {
+// Define the type for the returned hook
+interface UseLenisHook {
+  scrollTo: (selector: string) => void;
+}
+
+export const useLenis = (): UseLenisHook => {
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // Higher for smoother scrolling (default is 1)
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
       smoothTouch: true,
-      direction: 'vertical', // You can change to 'horizontal' if needed
+      direction: 'vertical',
     });
+    lenisRef.current = lenis;
 
-    // Scroll update function
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
-    // Start the scroll animation loop
     requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy(); // Clean up on component unmount
+      lenis.destroy();
     };
   }, []);
+
+  // Use Lenis to scroll to a specific element smoothly
+  const scrollTo = useCallback((selector: string) => {
+    const element = document.querySelector(selector);
+    if (element && lenisRef.current) {
+      lenisRef.current.scrollTo(element);
+    }
+  }, []);
+
+  return { scrollTo };
 };
