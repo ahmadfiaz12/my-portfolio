@@ -17,7 +17,7 @@ const projects = [
 
 const ProjectList: React.FC = () => {
   return (
-    <div className="bg-black py-12">
+    <div className="bg-black p-24">
       <h2 className="text-4xl font-bold text-white text-center mb-8">
         Explore My Projects
       </h2>

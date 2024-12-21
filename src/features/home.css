@@ -12,3 +12,10 @@
     backdrop-filter: blur(20px);
     background: linear-gradient(94deg, rgba(49, 50, 52, .61) 46.62%, rgba(88, 77, 77, .61) 115.88%);
 }
+
+.hero{
+    background-image: url('../assets/images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}

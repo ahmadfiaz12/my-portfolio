@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, category }) => {
   return (
-    <div className="relative group overflow-hidden rounded-lg shadow-lg">
+    <div className="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
       {/* Image */}
       <img
         src={image}

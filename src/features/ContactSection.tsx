@@ -10,37 +10,37 @@ const ContactSection: React.FC = () => {
       <div className="flex px-10 gap-14">
         {/* Left Section - Contact Info */}
         <div className="space-y-6 w-[35%]">
-          <p className="text-gray-400 font-semibold">
+          <p className="text-gray-400 font-semibold" data-aos="fade-up" data-aos-duration="1000">
             Get in Touch
           </p>
-          <h2 className="text-5xl font-normal">Let's Talk For your <span className="text-lime-400">Next Projects</span></h2>
-          <p className="text-gray-400">
+          <h2 className="text-5xl font-normal" data-aos="fade-up" data-aos-duration="1000">Let's Talk For your <span className="text-lime-400">Next Projects</span></h2>
+          <p className="text-gray-400" data-aos="fade-up" data-aos-duration="1000">
   Ready to bring your ideas to life? Let's create something remarkable together. Reach out, and let's turn your vision into reality.
 </p>
           <div className='space-y-3'>
-            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300" data-aos="fade-up" data-aos-duration="1000">
               <span className="mr-2"><FaLocationDot color={Colors.primaryColor} />
               </span> Multan, Pakistan
             </p>
-            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300" data-aos="fade-up" data-aos-duration="1000">
               <span className="mr-2"><MdEmail color={Colors.primaryColor} />
               </span> ahmadfiaz9089@gmail.com
             </p>
-            <p className="flex gap-2 cursor-pointer items-center text-gray-300">
+            <p className="flex gap-2 cursor-pointer items-center text-gray-300" data-aos="fade-up" data-aos-duration="1000">
               <span className="mr-2"><FaPhoneAlt color={Colors.primaryColor} />
               </span> +92 306 6495894
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold">Follow Me</h3>
+            <h3 className="text-xl font-semibold" data-aos="fade-up" data-aos-duration="1000">Contact Me</h3>
             <div className="flex space-x-4 mt-3">
-              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaLinkedinIn />
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black" data-aos="fade-up" data-aos-duration="1000"><FaLinkedinIn />
 
               </a>
-              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaFacebookF />
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black" data-aos="fade-up" data-aos-duration="1000"><FaFacebookF />
 
               </a>
-              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black"><FaWhatsapp />
+              <a href="#" className="text-sm bg-white p-3 rounded-3xl hover:bg-[#c9f31d] transition-all delay-100 text-black" data-aos="fade-up" data-aos-duration="1000"><FaWhatsapp />
 
               </a>
             </div>
@@ -51,7 +51,7 @@ const ContactSection: React.FC = () => {
         <div className="bg-[#1F1F1F] flex-1 p-8 rounded-lg shadow-lg">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-300">Full Name</label>
                 <input
                   type="text"
@@ -60,7 +60,7 @@ const ContactSection: React.FC = () => {
                   className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1010">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email Address</label>
                 <input
                   type="email"
@@ -71,7 +71,7 @@ const ContactSection: React.FC = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1020">
                 <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-300">Phone Number</label>
                 <input
                   type="text"
@@ -80,7 +80,7 @@ const ContactSection: React.FC = () => {
                   className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"
                 />
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1030">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300">Subject</label>
                 <input
                   type="text"
@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
                 />
               </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1040">
               <label htmlFor="message" className="block text-sm font-medium text-gray-300">Message</label>
               <textarea
                 id="message"
@@ -98,7 +98,7 @@ const ContactSection: React.FC = () => {
                 rows={4}
                 className="w-full bg-[#2F2F2F] text-gray-300 border mt-2 font-semibold border-gray-700 rounded-lg px-4 py-4 focus:bg-black focus:text-white focus:outline-none focus:border-lime-400"              ></textarea>
             </div>
-            <button
+            <button data-aos="fade-up" data-aos-duration="1050"
               type="submit"
               className="w-[max-content] px-10 bg-lime-400 text-black font-semibold py-3 rounded-lg shadow-md hover:bg-lime-500 transition-colors"
             >
