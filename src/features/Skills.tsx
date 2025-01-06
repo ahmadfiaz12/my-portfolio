@@ -42,7 +42,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div id="skills" className="flex w-full justify-center gap-56 items-center p-24">
+        <div id="skills" className="flex w-full justify-center gap-56 items-center lg:my-36 p-24">
             <div className="left-side  flex flex-col gap-7 text-white">
                 <p className="text-gray-500 mt-4 max-w-md" data-aos="fade-up" data-aos-duration="1000">
                     professional skill for me

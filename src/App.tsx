@@ -12,6 +12,7 @@ import Skills from './features/Skills';
 import Testimonials from './features/Testimonials';
 import { useLenis } from './hooks/useLenis';
 import AOS from "aos"
+import Animation from "./component/Animation"
 
 function App() {
   useLenis();
@@ -31,7 +32,8 @@ function App() {
           <ServicesSection />
           <Skills />
           <AboutMeSection />
-          <MarqueeText />
+          {/* <MarqueeText /> */}
+          <Animation />
           <ProjectList />
           <Testimonials />
           <ContactSection />
