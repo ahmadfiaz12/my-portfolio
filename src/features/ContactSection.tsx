@@ -11,10 +11,10 @@ import Colors from '../contants/colors'
 
 const ContactSection: React.FC = () => {
 	return (
-		<section className='text-white p-10 py-24'>
-			<div className='flex px-10 gap-14'>
+		<section id='contact' className='text-white p-5 md:p-10 md:py-24'>
+			<div className='flex md:px-10 gap-14 flex-col md:flex-row'>
 				{/* Left Section - Contact Info */}
-				<div className='space-y-6 w-[35%]'>
+				<div className='space-y-6 w-full md:w-[35%]'>
 					<p
 						className='text-gray-400 font-semibold'
 						data-aos='fade-up'
@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
 						Get in Touch
 					</p>
 					<h2
-						className='text-5xl font-normal'
+						className='text-2xl md:text-5xl font-normal'
 						data-aos='fade-up'
 						data-aos-duration='1000'
 					>
@@ -115,7 +115,7 @@ const ContactSection: React.FC = () => {
 				</div>
 
 				{/* Right Section - Contact Form */}
-				<div className='bg-[#1F1F1F] flex-1 p-8 rounded-lg shadow-lg'>
+				<div className='bg-[#1F1F1F] flex-1 p-3 md:p-8 rounded-lg shadow-lg'>
 					<form className='space-y-6'>
 						<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 							<div data-aos='fade-up' data-aos-duration='1000'>

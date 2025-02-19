@@ -41,7 +41,7 @@ export default function Animation() {
 
 	return (
 		<main className='overflow-hidden'>
-			<div className='h-[40vh]' />
+			<div className='h-[10vh] md:h-[40vh]' />
 			<div ref={container}>
 				<Slide
 					src={Picture1}
@@ -62,7 +62,7 @@ export default function Animation() {
 					progress={scrollYProgress}
 				/>
 			</div>
-			<div className='h-[40vh]' />
+			<div className='h-[10vh] md:h-[40vh]' />
 		</main>
 	)
 }

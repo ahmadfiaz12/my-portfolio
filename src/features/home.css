@@ -19,3 +19,12 @@
     background-size: 100%;
     background-position: center;
 }
+
+@media screen and (max-width: 490px) {
+    .blurry-bg-badge{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    
+}

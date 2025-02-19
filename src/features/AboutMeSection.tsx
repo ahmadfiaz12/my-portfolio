@@ -5,17 +5,10 @@ const AboutMeSection: React.FC = () => {
 	return (
 		<section
 			id='about'
-			className='w-full bg-black text-white py-12 px-6 lg:p-24 flex flex-col lg:flex-row lg:justify-center items-center'
+			className='w-full bg-black text-white py-12 md:px-6 lg:p-24 flex flex-col lg:flex-row lg:justify-center items-center'
 		>
 			{/* Text Content */}
 			<div className='lg:w-1/2 space-y-6 mb-12'>
-				<h3
-					className='text-lg font-light text-gray-400'
-					data-aos='fade-up'
-					data-aos-duration='500'
-				>
-					About Me
-				</h3>
 				<h2
 					className='text-4xl font-semibold leading-snug'
 					data-aos='fade-up'

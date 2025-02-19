@@ -13,9 +13,6 @@ export const useLenis = (): UseLenisHook => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      smoothTouch: true,
-      direction: 'vertical',
     });
     lenisRef.current = lenis;
 
@@ -35,7 +32,7 @@ export const useLenis = (): UseLenisHook => {
   const scrollTo = useCallback((selector: string) => {
     const element = document.querySelector(selector);
     if (element && lenisRef.current) {
-      lenisRef.current.scrollTo(element);
+      lenisRef.current.scrollTo(element as HTMLElement);
     }
   }, []);
 
