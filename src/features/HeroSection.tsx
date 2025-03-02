@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import aboutImage from '../assets/images/about image.png'
 import smilingImage from '../assets/images/IT-Business-Benefits-Image.webp'
 import './home.css'
 
@@ -21,7 +22,7 @@ const HeroSection = () => {
 				<div className='flex flex-col md:gap-10 mt-10 md:mt-0 w-full'>
 					<div className='flex items-end gap-20'>
 						<motion.div
-							className='hello font-bold text-[40px] md:text-[190px]'
+							className='hello font-bold text-[40px] md:text-[60px] xl:text-[190px]'
 							initial='hidden'
 							animate='visible'
 							variants={fadeUpVariant()}
@@ -29,7 +30,7 @@ const HeroSection = () => {
 							HELLO
 						</motion.div>
 						<motion.div
-							className='im font-bold text-2xl md:text-7xl'
+							className='im font-bold text-2xl md:text-4xl xl:text-7xl'
 							style={{ color: '#yourPrimaryColor' }}
 							initial='hidden'
 							animate='visible'
@@ -40,7 +41,7 @@ const HeroSection = () => {
 					</div>
 					<div className='flex w-full justify-end'>
 						<motion.div
-							className='name uppercase underline text-2xl md:text-8xl font-bold'
+							className='name uppercase underline text-2xl md:text-6xl xl:text-8xl font-bold'
 							initial='hidden'
 							animate='visible'
 							variants={fadeUpVariant(0.3)}
@@ -57,10 +58,13 @@ const HeroSection = () => {
 					</motion.div>
 				</div>
 			</div>
-			<section className='bg-black text-white py-10 md:py-0 md:min-h-screen flex flex-col md:flex-row items-center justify-center md:px-10'>
-				<div className='container-fluid md:container mx-auto p-2 md:p-10'>
+			<section
+				id='about'
+				className='bg-black text-white py-10 md:py-0 md:min-h-screen flex flex-col md:flex-row items-center justify-center md:px-10'
+			>
+				<div className='container-fluid flex flex-col xl:flex-row items-center justify-center gap-10 md:gap-20 md:container mx-auto p-5 md:p-10 md:mb-10'>
 					{/* Top Section */}
-					<div className='md:mb-10'>
+					<div className=''>
 						<p
 							className='text-gray-300 text-lg'
 							data-aos='fade-up'
@@ -68,8 +72,8 @@ const HeroSection = () => {
 						>
 							*About Me
 						</p>
-						<h1
-							className='text-xl md:text-6xl font-bold'
+						<h2
+							className='text-xl md:text-4xl font-bold w-full '
 							data-aos='fade-up'
 							data-aos-duration='550'
 						>
@@ -77,7 +81,7 @@ const HeroSection = () => {
 							<span className='text-lime-500'>Front-End Developer</span> <br />
 							crafting intuitive and high-performance <br />
 							web experiences.
-						</h1>
+						</h2>
 						<p
 							className='text-gray-400 mt-4'
 							data-aos='fade-up'
@@ -93,11 +97,13 @@ const HeroSection = () => {
 							applications.
 						</p>
 					</div>
+					{/* Statistics Section */}
+					<div className='flex justify-between md:hidden xl:flex items-center '>
+						<img src={aboutImage} className='h-64 md:h-96' />
+					</div>
 				</div>
-				{/* Statistics Section */}
-				<div className='flex justify-between items-center mt-16'></div>
 			</section>
-			<section className='bg-black text-white py-12 px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-center gap-56'>
+			<section className='bg-black text-white py-12 px-6 lg:px-24 flex flex-col-reverse md:flex-col xl:flex-row items-center justify-center gap-10 xl:gap-56'>
 				{/* Left Images Section */}
 				<div className='relative flex flex-col lg:flex-row items-center lg:items-start lg:justify-start space-y-6 lg:space-y-0 lg:space-x-6'>
 					<img
@@ -105,13 +111,13 @@ const HeroSection = () => {
 						data-aos-duration='1000'
 						src={smilingImage}
 						alt='Person Smiling'
-						className='w-48 h-48 lg:h-[500px] lg:w-full object-cover rounded-lg shadow-lg'
+						className='w-48 h-48 md:w-full md:h-[350px] xl:h-[500px] xl:w-full object-cover rounded-lg shadow-lg'
 					/>
 					<div className='absolute top-0 left-0 w-12 h-12 bg-lime-500 transform -translate-x-6 -translate-y-6'></div>
 					<div className='absolute bottom-0 left-0 w-12 h-12 bg-lime-500 transform translate-x-6 translate-y-6'></div>
 				</div>
 				{/* Right Text Section */}
-				<div className='mt-12 lg:mt-0 lg:ml-12 lg:max-w-md'>
+				<div className='mt-12 lg:mt-0 lg:ml-12 xl:max-w-md'>
 					<h3
 						className='text-xl font-light text-gray-400'
 						data-aos='fade-up'

@@ -69,7 +69,7 @@ const ServicesSection: React.FC = () => {
 					</h2>
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+				<div className='grid grid-cols-1 xl:grid-cols-2 gap-6'>
 					{services.map((service) => (
 						<div
 							data-aos='fade-up'

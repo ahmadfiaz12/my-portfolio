@@ -8,9 +8,9 @@ import Colors from '../contants/colors'
 const Footer: React.FC = () => {
 	return (
 		<footer className=' text-white '>
-			<div className='w-full bg-black p-5 md:px-24 py-10 md:py-0 h-full md:h-[300px] items-start md:items-center flex flex-col md:flex-row justify-between '>
+			<div className='w-full bg-black p-5 md:px-24 py-10 md:py-0 h-full md:h-[440px] md:pb-10 xl:h-[300px] items-start xl:items-start xl:pt-14 flex flex-col xl:flex-row justify-between'>
 				{/* Left Section */}
-				<div className='flex flex-col '>
+				<div className='flex flex-col'>
 					<img
 						src={logo}
 						className='w-20 object-cover'
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
 
 				{/* Center Section - Menu */}
 
-				<div className='quick-links '>
+				<div className='quick-links md:mt-10 xl:mt-0'>
 					<div
 						className='title text-xl'
 						data-aos='fade-up'
@@ -33,10 +33,26 @@ const Footer: React.FC = () => {
 					>
 						Quick Links
 					</div>
-					<div className='flex flex-col mt-10'>
+					<div className='flex flex-col mt-5'>
 						<nav className='md:flex space-x-5 mb-20 md:mb-0 md:space-x-6'>
 							<a
-								href='#'
+								href='#home'
+								className='text-gray-300 hover:text-lime-400'
+								data-aos='fade-up'
+								data-aos-duration='1000'
+							>
+								Home
+							</a>
+							<a
+								href='#about'
+								className='text-gray-300 hover:text-lime-400'
+								data-aos='fade-up'
+								data-aos-duration='1000'
+							>
+								About
+							</a>
+							<a
+								href='#services'
 								className='text-gray-300 hover:text-lime-400'
 								data-aos='fade-up'
 								data-aos-duration='1000'
@@ -44,31 +60,17 @@ const Footer: React.FC = () => {
 								Service
 							</a>
 							<a
-								href='#'
+								href='#projects'
 								className='text-gray-300 hover:text-lime-400'
 								data-aos='fade-up'
 								data-aos-duration='1010'
 							>
 								Projects
 							</a>
+						
+						
 							<a
-								href='#'
-								className='text-gray-300 hover:text-lime-400'
-								data-aos='fade-up'
-								data-aos-duration='1020'
-							>
-								Pricing
-							</a>
-							<a
-								href='#'
-								className='text-gray-300 hover:text-lime-400'
-								data-aos='fade-up'
-								data-aos-duration='1030'
-							>
-								News
-							</a>
-							<a
-								href='#'
+								href='#contact'
 								className='text-gray-300 hover:text-lime-400'
 								data-aos='fade-up'
 								data-aos-duration='1040'
@@ -79,7 +81,7 @@ const Footer: React.FC = () => {
 					</div>
 				</div>
 				{/*  */}
-				<div className='address'>
+				<div className='address mt-10 xl:mt-0'>
 					<div
 						className='title text-xl'
 						data-aos='fade-up'
@@ -106,7 +108,7 @@ const Footer: React.FC = () => {
 							<span className='mr-2'>
 								<MdEmail color={Colors.primaryColor} />
 							</span>{' '}
-							ahmadfiaz9089@gmail.com
+							ahmadfiaz.9089@gmail.com
 						</p>
 						<p
 							className='flex gap-2 cursor-pointer items-center text-gray-300'
@@ -132,11 +134,20 @@ const Footer: React.FC = () => {
 						<span className='text-lime-400'>Ahmad</span>
 					</a>
 				</p>
-				<div className='social space-x-14'>
-					<a href='https://www.linkedin.com/in/ahmad-fiaz' target='_blank'>
+				<div className='social space-x-6'>
+					<a
+						href='https://www.linkedin.com/in/ahmad-fiaz'
+						className='border p-2 px-5 rounded-full transition ease-in-out hover:bg-white hover:text-black'
+						target='_blank'
+					>
 						Linkdin
 					</a>
-					<a href='https://wa.me/+923066495894'>Whatsapp</a>
+					<a
+						href='https://wa.me/+923066495894'
+						className='border p-2 px-5 rounded-full transition ease-in-out hover:bg-white hover:text-black'
+					>
+						Whatsapp
+					</a>
 				</div>
 			</div>
 		</footer>

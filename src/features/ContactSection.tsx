@@ -10,11 +10,16 @@ import { MdEmail } from 'react-icons/md'
 import Colors from '../contants/colors'
 
 const ContactSection: React.FC = () => {
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault()
+		alert('Form submitted successfully!')
+	}
+
 	return (
 		<section id='contact' className='text-white p-5 md:p-10 md:py-24'>
-			<div className='flex md:px-10 gap-14 flex-col md:flex-row'>
+			<div className='flex md:px-10 gap-14 flex-col xl:flex-row'>
 				{/* Left Section - Contact Info */}
-				<div className='space-y-6 w-full md:w-[35%]'>
+				<div className='space-y-6 w-full xl:w-[35%]'>
 					<p
 						className='text-gray-400 font-semibold'
 						data-aos='fade-up'
@@ -62,8 +67,8 @@ const ContactSection: React.FC = () => {
 							<span className='mr-2'>
 								<MdEmail color={Colors.primaryColor} />
 							</span>{' '}
-							<a href='mailto:ahmadfiaz9089@gmail.com'>
-								ahmadfiaz9089@gmail.com
+							<a href='mailto:ahmadfiaz.9089@gmail.com'>
+								ahmadfiaz.9089@gmail.com
 							</a>
 						</p>
 						<p
@@ -195,9 +200,10 @@ const ContactSection: React.FC = () => {
 							data-aos='fade-up'
 							data-aos-duration='1050'
 							type='submit'
+							onClick={handleSubmit}
 							className='w-[max-content] px-10 bg-lime-400 text-black font-semibold py-3 rounded-lg shadow-md hover:bg-lime-500 transition-colors'
 						>
-							Send Us Message
+							Send
 						</button>
 					</form>
 				</div>

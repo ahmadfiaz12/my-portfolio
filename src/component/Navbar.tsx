@@ -46,7 +46,7 @@ const Navbar = () => {
 
 				{/* Desktop Menu */}
 				<div className='hidden md:flex items-center space-x-10'>
-					{['Home', 'About', 'Skills', 'Services', 'Projects', 'Contact'].map(
+					{['Home', 'About', 'Services', 'Skills', 'Projects', 'Contact'].map(
 						(item) => (
 							<a
 								key={item}

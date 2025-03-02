@@ -53,7 +53,7 @@ const ProjectList: React.FC = () => {
 			<h2 className='text-2xl my-10 md:text-4xl font-bold text-white text-center mb-8'>
 				Explore My Projects
 			</h2>
-			<div className='container md:mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+			<div className='container md:mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
 				{projects.map((project, index) => (
 					<ProjectCard key={index} {...project} />
 				))}

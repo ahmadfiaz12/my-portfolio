@@ -15,8 +15,8 @@ import testimonials from '../constants/content';
 const Testimonials: React.FC = () => {
   return (
     <div className="bg-black text-white p-5 py-20 md:py-28 lg:px-24">
-      <div className="w-full flex flex-col md:flex-row gap-10">
-        <div className="mb-8 w-full md:w-[40%]">
+      <div className="w-full flex flex-col xl:flex-row gap-10">
+        <div className="mb-8 w-full xl:w-[40%]">
           <p className="text-sm text-gray-400 uppercase" data-aos="fade-up" data-aos-duration="1000">Clients Testimonials</p>
           <h2 className="text-3xl md:text-5xl font-semibold">
             I've <span className="" style={{
@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Swiper Testimonial Slider */}
-        <div className='w-full md:w-[60%]'>
+        <div className='w-full xl:w-[60%]'>
 
         <Swiper
           spaceBetween={30}
@@ -72,7 +72,7 @@ const Testimonials: React.FC = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-transparent border-2 border-gray-600 h-full md:h-[300px] p-6 rounded-xl text-center shadow-lg transform transition duration-300" data-aos="fade-up" data-aos-duration="1000">
+              <div className="bg-transparent border-2 border-gray-600 h-full md:h-[320px] p-6 rounded-xl text-center shadow-lg transform transition duration-300" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex justify-center items-center mb-4">
                   <FaQuoteLeft className="text-[#c9f31d] 400 text-4xl" />
                 </div>

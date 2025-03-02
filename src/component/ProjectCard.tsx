@@ -10,7 +10,6 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
 	image,
 	title,
-	category,
 	link
 }) => {
 	return (
@@ -41,9 +40,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					<h3 className='text-lg font-bold text-white bg-lime-400 px-2 py-1 rounded text-center'>
 						{title}
 					</h3>
-					<p className='text-sm text-white bg-black/60 px-2 py-1 rounded'>
+					{/* <p className='text-sm text-white bg-black/60 px-2 py-1 rounded'>
 						{category}
-					</p>
+					</p> */}
 				</div>
 			</div>
 		</a>

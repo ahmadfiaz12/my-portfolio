@@ -4,13 +4,13 @@ import AboutMe from '../assets/images/aboutMe.png'
 const AboutMeSection: React.FC = () => {
 	return (
 		<section
-			id='about'
-			className='w-full bg-black text-white py-12 md:px-6 lg:p-24 flex flex-col lg:flex-row lg:justify-center items-center'
+			
+			className='w-full bg-black text-white py-12 p-5 md:px-6 lg:p-24 flex flex-col lg:flex-row lg:justify-center items-center'
 		>
 			{/* Text Content */}
 			<div className='lg:w-1/2 space-y-6 mb-12'>
 				<h2
-					className='text-4xl font-semibold leading-snug'
+					className='text-2xl md:text-4xl font-semibold leading-snug'
 					data-aos='fade-up'
 					data-aos-duration='500'
 				>
@@ -78,7 +78,7 @@ const AboutMeSection: React.FC = () => {
 			</div>
 
 			{/* Experience & Profile Cards */}
-			<div className='lg:w-1/2 flex justify-center  relative'>
+			<div className='lg:w-1/2 flex justify-center relative'>
 				<img
 					src={AboutMe}
 					data-aos='fade-left'
