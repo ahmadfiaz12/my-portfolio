@@ -29,7 +29,6 @@ function App() {
 					<ServicesSection />
 					<Skills />
 					<AboutMeSection />
-					{/* <MarqueeText /> */}
 					<Animation />
 					<ProjectList />
 					<Testimonials />
